@@ -1,3 +1,5 @@
+// lib/screens/driver_home_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -122,6 +124,11 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> {
               PrimaryButton(
                 text: 'View / Edit My Profile',
                 onPressed: () => Navigator.pushNamed(context, '/edit_driver_profile'),
+              ),
+              const SizedBox(height: 16),
+              PrimaryButton(
+                text: '⭐ My Driver Reviews',
+                onPressed: () => Navigator.pushNamed(context, '/driver_reviews'),
               ),
               const SizedBox(height: 16),
               PrimaryButton(
